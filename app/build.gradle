@@ -19,9 +19,7 @@ android {
         release {
             minifyEnabled false
         }
-        debug {
-            // می‌تونی تنظیمات debug اضافه کنی
-        }
+        debug { }
     }
 
     compileOptions {
