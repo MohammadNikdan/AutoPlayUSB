@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace 'com.yourcompany.autoplayusb' // <<< حتماً اینو با package خودت جایگزین کن
+    namespace 'com.example.autoplayusb' // <<< حتماً اینو با package خودت جایگزین کن
     compileSdk 34
 
     defaultConfig {
-        applicationId 'com.yourcompany.autoplayusb' // <<< مطابق با namespace
+        applicationId 'com.example.autoplayusb' // <<< مطابق با namespace
         minSdk 21
         targetSdk 34
         versionCode 1
