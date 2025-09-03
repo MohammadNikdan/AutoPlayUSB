@@ -1,3 +1,5 @@
+// فقط پلاگین‌ها و clean task، بدون repository
+
 buildscript {
     dependencies {
         classpath "com.android.tools.build:gradle:8.2.0"
