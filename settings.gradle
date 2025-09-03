@@ -14,5 +14,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "AutoPlayUSB"
-include(":app")
+rootProject.name = 'AutoPlayUSB'
+include ':app'
