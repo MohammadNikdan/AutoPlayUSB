@@ -4,15 +4,25 @@ plugins {
 }
 
 android {
-    namespace 'com.yourcompany.autoplayusb'  // ← اینو اضافه کن، جای yourcompany.autoplayusb نام پکیج واقعی پروژه رو بذار
+    namespace 'com.yourcompany.autoplayusb' // <<< حتماً اینو با package خودت جایگزین کن
     compileSdk 34
 
     defaultConfig {
-        applicationId "com.yourcompany.autoplayusb"  // همون namespace باشه
+        applicationId 'com.yourcompany.autoplayusb' // <<< مطابق با namespace
         minSdk 21
         targetSdk 34
         versionCode 1
         versionName "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        debug {
+            debuggable true
+        }
     }
 
     compileOptions {
@@ -23,18 +33,14 @@ android {
     kotlinOptions {
         jvmTarget = "17"
     }
-
-    buildTypes {
-        release {
-            minifyEnabled false
-            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
-        }
-    }
 }
 
 dependencies {
     implementation 'androidx.core:core-ktx:1.13.0'
     implementation 'androidx.appcompat:appcompat:1.7.0'
-    implementation 'com.google.android.material:material:1.11.0'
     implementation 'androidx.constraintlayout:constraintlayout:2.2.0'
+    implementation 'androidx.activity:activity:1.8.0'
+    implementation 'androidx.transition:transition:1.5.0'
+    implementation 'androidx.annotation:annotation-experimental:1.4.0'
+    implementation 'androidx.profileinstaller:profileinstaller:1.4.0'
 }
