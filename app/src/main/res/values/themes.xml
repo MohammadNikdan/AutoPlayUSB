@@ -1,6 +1,6 @@
 <resources xmlns:tools="http://schemas.android.com/tools">
 
-    <style name="Theme.AutoPlayUSB" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="Theme.AutoPlayUSB" parent="Theme.AppCompat.Light.NoActionBar">
         <!-- Customize your theme here if needed -->
     </style>
 
